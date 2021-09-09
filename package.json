@@ -1,6 +1,6 @@
 {
   "name": "animate-css-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Animate CSS Generator",
   "main": "index.js",
   "scripts": {
@@ -18,8 +18,5 @@
   "bugs": {
     "url": "https://github.com/Bigetion/animate-css-generator/issues"
   },
-  "homepage": "https://github.com/Bigetion/animate-css-generator#readme",
-  "dependencies": {
-    "css-hash": "^1.0.2"
-  }
+  "homepage": "https://github.com/Bigetion/animate-css-generator#readme"
 }
