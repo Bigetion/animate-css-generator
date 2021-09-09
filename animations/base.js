@@ -1,4 +1,4 @@
-const { cssHash } = require('css-hash');
+import { cssHash } from 'css-hash';
 
 const animatedClass = cssHash(
 	(className) => `
