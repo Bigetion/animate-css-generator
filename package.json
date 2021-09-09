@@ -1,0 +1,25 @@
+{
+  "name": "animate-css-generator",
+  "version": "1.0.0",
+  "description": "Animate CSS Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bigetion/animate-css-generator.git"
+  },
+  "keywords": [
+    "animate"
+  ],
+  "author": "Bigetion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bigetion/animate-css-generator/issues"
+  },
+  "homepage": "https://github.com/Bigetion/animate-css-generator#readme",
+  "dependencies": {
+    "css-hash": "^1.0.2"
+  }
+}
