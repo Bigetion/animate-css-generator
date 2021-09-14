@@ -1,217 +1,115 @@
-import animated from './animations/base';
+module.exports.animated = require('./animations/base');
 
-import bounce from './animations/bounce';
-import flash from './animations/flash';
-import pulse from './animations/pulse';
-import rubberBand from './animations/rubberBand';
-import shakeX from './animations/shakeX';
-import shakeY from './animations/shakeY';
-import headShake from './animations/headShake';
-import swing from './animations/swing';
-import tada from './animations/tada';
-import wobble from './animations/wobble';
-import jello from './animations/jello';
-import heartBeat from './animations/heartBeat';
+module.exports.bounce = require('./animations/bounce');
+module.exports.flash = require('./animations/flash');
+module.exports.pulse = require('./animations/pulse');
+module.exports.rubberBand = require('./animations/rubberBand');
+module.exports.shakeX = require('./animations/shakeX');
+module.exports.shakeY = require('./animations/shakeY');
+module.exports.headShake = require('./animations/headShake');
+module.exports.swing = require('./animations/swing');
+module.exports.tada = require('./animations/tada');
+module.exports.wobble = require('./animations/wobble');
+module.exports.jello = require('./animations/jello');
+module.exports.heartBeat = require('./animations/heartBeat');
 
-import backInDown from './animations/backInDown';
-import backInLeft from './animations/backInLeft';
-import backInRight from './animations/backInRight';
-import backInUp from './animations/backInUp';
+module.exports.backInDown = require('./animations/backInDown');
+module.exports.backInLeft = require('./animations/backInLeft');
+module.exports.backInRight = require('./animations/backInRight');
+module.exports.backInUp = require('./animations/backInUp');
 
-import backOutDown from './animations/backOutDown';
-import backOutLeft from './animations/backOutLeft';
-import backOutRight from './animations/backOutRight';
-import backOutUp from './animations/backOutUp';
+module.exports.backOutDown = require('./animations/backOutDown');
+module.exports.backOutLeft = require('./animations/backOutLeft');
+module.exports.backOutRight = require('./animations/backOutRight');
+module.exports.backOutUp = require('./animations/backOutUp');
 
-import bounceIn from './animations/bounceIn';
-import bounceInDown from './animations/bounceInDown';
-import bounceInLeft from './animations/bounceInLeft';
-import bounceInRight from './animations/bounceInRight';
-import bounceInUp from './animations/bounceInUp';
+module.exports.bounceIn = require('./animations/bounceIn');
+module.exports.bounceInDown = require('./animations/bounceInDown');
+module.exports.bounceInLeft = require('./animations/bounceInLeft');
+module.exports.bounceInRight = require('./animations/bounceInRight');
+module.exports.bounceInUp = require('./animations/bounceInUp');
 
-import bounceOut from './animations/bounceOut';
-import bounceOutDown from './animations/bounceOutDown';
-import bounceOutLeft from './animations/bounceOutLeft';
-import bounceOutRight from './animations/bounceOutRight';
-import bounceOutUp from './animations/bounceOutUp';
+module.exports.bounceOut = require('./animations/bounceOut');
+module.exports.bounceOutDown = require('./animations/bounceOutDown');
+module.exports.bounceOutLeft = require('./animations/bounceOutLeft');
+module.exports.bounceOutRight = require('./animations/bounceOutRight');
+module.exports.bounceOutUp = require('./animations/bounceOutUp');
 
-import fadeIn from './animations/fadeIn';
-import fadeInDown from './animations/fadeInDown';
-import fadeInDownBig from './animations/fadeInDownBig';
-import fadeInLeft from './animations/fadeInLeft';
-import fadeInLeftBig from './animations/fadeInLeftBig';
-import fadeInRight from './animations/fadeInRight';
-import fadeInRightBig from './animations/fadeInRightBig';
-import fadeInUp from './animations/fadeInUp';
-import fadeInUpBig from './animations/fadeInUpBig';
-import fadeInTopLeft from './animations/fadeInTopLeft';
-import fadeInTopRight from './animations/fadeInTopRight';
-import fadeInBottomLeft from './animations/fadeInBottomLeft';
-import fadeInBottomRight from './animations/fadeInBottomRight';
+module.exports.fadeIn = require('./animations/fadeIn');
+module.exports.fadeInDown = require('./animations/fadeInDown');
+module.exports.fadeInDownBig = require('./animations/fadeInDownBig');
+module.exports.fadeInLeft = require('./animations/fadeInLeft');
+module.exports.fadeInLeftBig = require('./animations/fadeInLeftBig');
+module.exports.fadeInRight = require('./animations/fadeInRight');
+module.exports.fadeInRightBig = require('./animations/fadeInRightBig');
+module.exports.fadeInUp = require('./animations/fadeInUp');
+module.exports.fadeInUpBig = require('./animations/fadeInUpBig');
+module.exports.fadeInTopLeft = require('./animations/fadeInTopLeft');
+module.exports.fadeInTopRight = require('./animations/fadeInTopRight');
+module.exports.fadeInBottomLeft = require('./animations/fadeInBottomLeft');
+module.exports.fadeInBottomRight = require('./animations/fadeInBottomRight');
 
-import fadeOut from './animations/fadeOut';
-import fadeOutDown from './animations/fadeOutDown';
-import fadeOutDownBig from './animations/fadeOutDownBig';
-import fadeOutLeft from './animations/fadeOutLeft';
-import fadeOutLeftBig from './animations/fadeOutLeftBig';
-import fadeOutRight from './animations/fadeOutRight';
-import fadeOutRightBig from './animations/fadeOutRightBig';
-import fadeOutUp from './animations/fadeOutUp';
-import fadeOutUpBig from './animations/fadeOutUpBig';
-import fadeOutTopLeft from './animations/fadeOutTopLeft';
-import fadeOutTopRight from './animations/fadeOutTopRight';
-import fadeOutBottomRight from './animations/fadeOutBottomRight';
-import fadeOutBottomLeft from './animations/fadeOutBottomLeft';
+module.exports.fadeOut = require('./animations/fadeOut');
+module.exports.fadeOutDown = require('./animations/fadeOutDown');
+module.exports.fadeOutDownBig = require('./animations/fadeOutDownBig');
+module.exports.fadeOutLeft = require('./animations/fadeOutLeft');
+module.exports.fadeOutLeftBig = require('./animations/fadeOutLeftBig');
+module.exports.fadeOutRight = require('./animations/fadeOutRight');
+module.exports.fadeOutRightBig = require('./animations/fadeOutRightBig');
+module.exports.fadeOutUp = require('./animations/fadeOutUp');
+module.exports.fadeOutUpBig = require('./animations/fadeOutUpBig');
+module.exports.fadeOutTopLeft = require('./animations/fadeOutTopLeft');
+module.exports.fadeOutTopRight = require('./animations/fadeOutTopRight');
+module.exports.fadeOutBottomRight = require('./animations/fadeOutBottomRight');
+module.exports.fadeOutBottomLeft = require('./animations/fadeOutBottomLeft');
 
-import flip from './animations/flip';
-import flipInX from './animations/flipInX';
-import flipInY from './animations/flipInY';
-import flipOutX from './animations/flipOutX';
-import flipOutY from './animations/flipOutY';
+module.exports.flip = require('./animations/flip');
+module.exports.flipInX = require('./animations/flipInX');
+module.exports.flipInY = require('./animations/flipInY');
+module.exports.flipOutX = require('./animations/flipOutX');
+module.exports.flipOutY = require('./animations/flipOutY');
 
-import lightSpeedInRight from './animations/lightSpeedInRight';
-import lightSpeedInLeft from './animations/lightSpeedInLeft';
-import lightSpeedOutRight from './animations/lightSpeedOutRight';
-import lightSpeedOutLeft from './animations/lightSpeedOutLeft';
+module.exports.lightSpeedInRight = require('./animations/lightSpeedInRight');
+module.exports.lightSpeedInLeft = require('./animations/lightSpeedInLeft');
+module.exports.lightSpeedOutRight = require('./animations/lightSpeedOutRight');
+module.exports.lightSpeedOutLeft = require('./animations/lightSpeedOutLeft');
 
-import rotateIn from './animations/rotateIn';
-import rotateInDownLeft from './animations/rotateInDownLeft';
-import rotateInDownRight from './animations/rotateInDownRight';
-import rotateInUpLeft from './animations/rotateInUpLeft';
-import rotateInUpRight from './animations/rotateInUpRight';
+module.exports.rotateIn = require('./animations/rotateIn');
+module.exports.rotateInDownLeft = require('./animations/rotateInDownLeft');
+module.exports.rotateInDownRight = require('./animations/rotateInDownRight');
+module.exports.rotateInUpLeft = require('./animations/rotateInUpLeft');
+module.exports.rotateInUpRight = require('./animations/rotateInUpRight');
 
-import rotateOut from './animations/rotateOut';
-import rotateOutDownLeft from './animations/rotateOutDownLeft';
-import rotateOutDownRight from './animations/rotateOutDownRight';
-import rotateOutUpLeft from './animations/rotateOutUpLeft';
-import rotateOutUpRight from './animations/rotateOutUpRight';
+module.exports.rotateOut = require('./animations/rotateOut');
+module.exports.rotateOutDownLeft = require('./animations/rotateOutDownLeft');
+module.exports.rotateOutDownRight = require('./animations/rotateOutDownRight');
+module.exports.rotateOutUpLeft = require('./animations/rotateOutUpLeft');
+module.exports.rotateOutUpRight = require('./animations/rotateOutUpRight');
 
-import hinge from './animations/hinge';
-import jackInTheBox from './animations/jackInTheBox';
-import rollIn from './animations/rollIn';
-import rollOut from './animations/rollOut';
-import spin from './animations/spin';
+module.exports.hinge = require('./animations/hinge');
+module.exports.jackInTheBox = require('./animations/jackInTheBox');
+module.exports.rollIn = require('./animations/rollIn');
+module.exports.rollOut = require('./animations/rollOut');
+module.exports.spin = require('./animations/spin');
 
-import zoomIn from './animations/zoomIn';
-import zoomInDown from './animations/zoomInDown';
-import zoomInLeft from './animations/zoomInLeft';
-import zoomInRight from './animations/zoomInRight';
-import zoomInUp from './animations/zoomInUp';
+module.exports.zoomIn = require('./animations/zoomIn');
+module.exports.zoomInDown = require('./animations/zoomInDown');
+module.exports.zoomInLeft = require('./animations/zoomInLeft');
+module.exports.zoomInRight = require('./animations/zoomInRight');
+module.exports.zoomInUp = require('./animations/zoomInUp');
 
-import zoomOut from './animations/zoomOut';
-import zoomOutDown from './animations/zoomOutDown';
-import zoomOutLeft from './animations/zoomOutLeft';
-import zoomOutRight from './animations/zoomOutRight';
-import zoomOutUp from './animations/zoomOutUp';
+module.exports.zoomOut = require('./animations/zoomOut');
+module.exports.zoomOutDown = require('./animations/zoomOutDown');
+module.exports.zoomOutLeft = require('./animations/zoomOutLeft');
+module.exports.zoomOutRight = require('./animations/zoomOutRight');
+module.exports.zoomOutUp = require('./animations/zoomOutUp');
 
-import slideInDown from './animations/slideInDown';
-import slideInLeft from './animations/slideInLeft';
-import slideInRight from './animations/slideInRight';
-import slideInUp from './animations/slideInUp';
+module.exports.slideInDown = require('./animations/slideInDown');
+module.exports.slideInLeft = require('./animations/slideInLeft');
+module.exports.slideInRight = require('./animations/slideInRight');
+module.exports.slideInUp = require('./animations/slideInUp');
 
-import slideOutDown from './animations/slideOutDown';
-import slideOutLeft from './animations/slideOutLeft';
-import slideOutRight from './animations/slideOutRight';
-import slideOutUp from './animations/slideOutUp';
-
-export {
-	animated,
-	bounce,
-	flash,
-	pulse,
-	rubberBand,
-	shakeX,
-	shakeY,
-	headShake,
-	swing,
-	tada,
-	wobble,
-	jello,
-	heartBeat,
-	backInDown,
-	backInLeft,
-	backInRight,
-	backInUp,
-	backOutDown,
-	backOutLeft,
-	backOutRight,
-	backOutUp,
-	bounceIn,
-	bounceInDown,
-	bounceInLeft,
-	bounceInRight,
-	bounceInUp,
-	bounceOut,
-	bounceOutDown,
-	bounceOutLeft,
-	bounceOutRight,
-	bounceOutUp,
-	fadeIn,
-	fadeInDown,
-	fadeInDownBig,
-	fadeInLeft,
-	fadeInLeftBig,
-	fadeInRight,
-	fadeInRightBig,
-	fadeInUp,
-	fadeInUpBig,
-	fadeInTopLeft,
-	fadeInTopRight,
-	fadeInBottomLeft,
-	fadeInBottomRight,
-	fadeOut,
-	fadeOutDown,
-	fadeOutDownBig,
-	fadeOutLeft,
-	fadeOutLeftBig,
-	fadeOutRight,
-	fadeOutRightBig,
-	fadeOutUp,
-	fadeOutUpBig,
-	fadeOutTopLeft,
-	fadeOutTopRight,
-	fadeOutBottomRight,
-	fadeOutBottomLeft,
-	flip,
-	flipInX,
-	flipInY,
-	flipOutX,
-	flipOutY,
-	lightSpeedInRight,
-	lightSpeedInLeft,
-	lightSpeedOutRight,
-	lightSpeedOutLeft,
-	rotateIn,
-	rotateInDownLeft,
-	rotateInDownRight,
-	rotateInUpLeft,
-	rotateInUpRight,
-	rotateOut,
-	rotateOutDownLeft,
-	rotateOutDownRight,
-	rotateOutUpLeft,
-	rotateOutUpRight,
-	hinge,
-	jackInTheBox,
-	rollIn,
-	rollOut,
-	spin,
-	zoomIn,
-	zoomInDown,
-	zoomInLeft,
-	zoomInRight,
-	zoomInUp,
-	zoomOut,
-	zoomOutDown,
-	zoomOutLeft,
-	zoomOutRight,
-	zoomOutUp,
-	slideInDown,
-	slideInLeft,
-	slideInRight,
-	slideInUp,
-	slideOutDown,
-	slideOutLeft,
-	slideOutRight,
-	slideOutUp,
-};
+module.exports.slideOutDown = require('./animations/slideOutDown');
+module.exports.slideOutLeft = require('./animations/slideOutLeft');
+module.exports.slideOutRight = require('./animations/slideOutRight');
+module.exports.slideOutUp = require('./animations/slideOutUp');

@@ -1,6 +1,6 @@
 {
   "name": "animate-css-generator",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Animate CSS Generator",
   "main": "index.js",
   "scripts": {

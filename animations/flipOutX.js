@@ -1,4 +1,4 @@
-import { cssHash } from 'css-hash';
+const { cssHash } = require('css-hash');
 
 const animationClass = cssHash(
   (className) => `
@@ -23,4 +23,4 @@ const animationClass = cssHash(
   `,
 );
 
-export default animationClass;
+module.exports = animationClass;

@@ -1,6 +1,6 @@
-import { cssHash } from 'css-hash';
+const { cssHash } = require('css-hash');
 
-const animatedClass = cssHash(
+const animationClass = cssHash(
 	(className) => `
     .${className} {
       --animate-duration: 1s;
@@ -35,4 +35,4 @@ const animatedClass = cssHash(
   `
 );
 
-export default animatedClass;
+module.exports = animationClass;
