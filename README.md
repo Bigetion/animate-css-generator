@@ -11,17 +11,15 @@ npm i animate-css-generator
 
 ```jsx
 import React from "react";
-import animated from "animate-css-generator/animations/base";
+import animated from "animate-css-generator/animations/animated";
+import animatedInfinite from "animate-css-generator/animations/animatedInfinite";
 import bounce from "animate-css-generator/animations/bounce";
 
 function App() {
   return (
     <div>
-      <div className={`${animated} ${bounce} animate-infinite`}>Bounce Infinite</div>
-      <div className={`${animated} ${bounce} animate-faster`}>Bounce Faster</div>
-      <div className={`${animated} ${bounce} animate-fast`}>Bounce Fast</div>
-      <div className={`${animated} ${bounce} animate-slow`}>Bounce Slow</div>
-      <div className={`${animated} ${bounce} animate-slower`}>Bounce Slow</div>
+      <div className={`${animated} ${bounce}`}>Bounce</div>
+      <div className={`${animated} ${bounce} ${animatedInfinite}`}>Bounce Infinite</div>
     </div>
   );
 }
