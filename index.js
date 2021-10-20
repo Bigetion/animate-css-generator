@@ -1,4 +1,5 @@
-module.exports.animated = require('./animations/base');
+module.exports.animated = require('./animations/animated');
+module.exports.animatedInfinite = require('./animations/animatedInfinite');
 
 module.exports.bounce = require('./animations/bounce');
 module.exports.flash = require('./animations/flash');
