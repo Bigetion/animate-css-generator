@@ -1,11 +1,13 @@
 const { cssHash } = require('css-hash');
 
+const generator = require('./generator');
+
 const animationClass = cssHash(
-	(className) => `
+  (className) => `
     .${className} {
-      animation-iteration-count: infinite;
+      ${generator.fields('animation-iteration-count: infinite')}
     }
-  `
+  `,
 );
 
 module.exports = animationClass;

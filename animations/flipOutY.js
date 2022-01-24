@@ -1,24 +1,36 @@
 const { cssHash } = require('css-hash');
 
+const generator = require('./generator');
+
 const animationClass = cssHash(
   (className) => `
-    @keyframes ${className} {
-      from {
-        transform: perspective(400px);
-      }
-      30% {
-        transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-        opacity: 1;
-      }
-      to {
-        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-        opacity: 0;
-      }
-    }
+    ${generator.keyframes(
+      className,
+      `
+        from {
+          ${generator.fields('transform: perspective(400px)')}
+        }
+        30% {
+          ${generator.fields(
+            'transform: perspective(400px) rotate3d(0, 1, 0, -15deg)',
+          )}
+          opacity: 1;
+        }
+        to {
+          ${generator.fields(
+            'transform: perspective(400px) rotate3d(0, 1, 0, 90deg)',
+          )}
+          opacity: 0;
+        }
+      `,
+    )}
     .${className} {
-      animation-duration: calc(var(--animate-duration) * 0.75);
-      backface-visibility: visible !important;
-      animation-name: ${className};
+      ${generator.fields(
+        `animation-name: ${className}`,
+        'animation-duration: calc(1s * 0.75)',
+        'animation-duration: calc(var(--animate-duration) * 0.75)',
+        'backface-visibility: visible !important',
+      )}
     }
   `,
 );

@@ -1,19 +1,26 @@
 const { cssHash } = require('css-hash');
 
+const generator = require('./generator');
+
 const animationClass = cssHash(
   (className) => `
-    @keyframes ${className} {
-      from {
-        opacity: 1;
-      }
-      to {
-        transform: translate3d(100%, 0, 0) skewX(30deg);
-        opacity: 0;
-      }
-    }
+    ${generator.keyframes(
+      className,
+      `
+        from {
+          opacity: 1;
+        }      
+        to {
+          ${generator.fields('transform: translate3d(100%, 0, 0) skewX(30deg)')}
+          opacity: 0;
+        }
+      `,
+    )}
     .${className} {
-      animation-name: ${className};
-      animation-timing-function: ease-in;
+      ${generator.fields(
+        `animation-name: ${className}`,
+        'animation-timing-function: ease-in',
+      )}
     }
   `,
 );

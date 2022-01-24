@@ -1,17 +1,22 @@
 const { cssHash } = require('css-hash');
 
+const generator = require('./generator');
+
 const animationClass = cssHash(
   (className) => `
-    @keyframes ${className} {
-      from {
-        opacity: 1;
-      }
-      to {
-        opacity: 0;
-      }
-    }
+    ${generator.keyframes(
+      className,
+      `
+        from {
+          opacity: 1;
+        }      
+        to {
+          opacity: 0;
+        }
+      `,
+    )}
     .${className} {
-      animation-name: ${className};
+      ${generator.fields(`animation-name: ${className}`)}
     }
   `,
 );
