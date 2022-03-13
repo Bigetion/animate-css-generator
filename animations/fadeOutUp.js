@@ -1,6 +1,6 @@
 const { cssHash } = require('css-hash');
 
-const generator = require('./generator');
+const generator = require('../generator');
 
 const animationClass = cssHash(
   (className) => `
